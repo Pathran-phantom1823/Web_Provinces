@@ -1,4 +1,5 @@
 {
+    "goup":"Visayas",
     "name": "Cebu",
     "Population": "967,000",
     "Images":["https://primer.com.ph/feature/wp-content/uploads/sites/15/2017/05/top-photo.jpg", 
@@ -18,7 +19,8 @@
             "link":"https://www.cebutraveller.com/wp-content/uploads/2018/03/Binignit.jpg"
         }
 
-    ]
+    ],
+    "write-ups":"Cebu is the hub around which the Visayas revolve. It is the most densely populated island in the Philippines and is second only to Luzon in its strategic and economic importance to the country. Cebu draws almost two million foreign travellers a year. The island's prime attractions are its white-sand beaches and spectacular diving, chiefly off the northern tip of Cebu at Malapascua and down on the southwest coast at Moalboal. And don't ignore much-maligned Cebu City, which has lively bars, emerging eateries and burgeoning retail appeal."
 
     
 }
