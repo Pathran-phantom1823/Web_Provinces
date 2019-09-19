@@ -5,9 +5,19 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Document
-        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css")        
     body
-        div(class= "ui equal width grid")
-            div(class = "column")
-                div(class= "ui segment")
-                    h hello
+                    center 
+                        h1= provinceData["name"]
+                        
+                    img(src= provinceData["Images"][1] style='width:100%;height:auto;')  
+                    img(src= provinceData["Images"][0] style='width:50%;height:auto;') 
+                    img(src= provinceData["Images"][2] style='width:49%;height:auto;')
+                
+                    h1= provinceData["group"]
+                    
+                    strong
+                        label Delicacies:
+                    p= provinceData["Delicacies"][0]
+                    p= provinceData["Delicacies"][1] 
+                    p= provinceData["Delicacies"][2]
+                    p= provinceData["write_ups"]   

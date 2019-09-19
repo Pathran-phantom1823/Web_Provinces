@@ -1,0 +1,19 @@
+{
+    "group":"Mindanao",
+    "short_name": "tawi-tawi",
+    "name": "Province of Tawi-Tawi",
+    "Population": "390,715",
+    "Images":["/images/tawitawi1.jpg", 
+        "/images/tawitawi2.jpg", 
+        "/images/tawitawi3.jpg"],
+
+    "Delicacies": [
+        "Chiken Pinanggang",
+        "Kahanga Rendang",
+        "Pickled Seaweed"
+
+    ],
+    "write_ups":"Deep in the Sulu Sea, Tawi-Tawi province is a breathtakingly beautiful archipelago of tropical islands, reefs and fascinating sea nomad communities. Unfortunately, it's also home to the Philippines' most feared terrorist groups..."
+
+    
+}

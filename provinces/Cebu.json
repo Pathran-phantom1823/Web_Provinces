@@ -1,0 +1,19 @@
+{
+    "group":"Visayas",
+    "short_name": "Cebu",
+    "name": "Province Of Cebu",
+    "Population": "967,000",
+    "Images":["/images/photo1.jpg","/images/phot04.jpg", "/images/photo5.jpg"
+    ],
+
+    "Delicacies": [
+        "Puto Kuchinta",
+        "Chicharon",
+        "Inasal"
+
+    ],
+
+    "write_ups":"Cebu is the hub around which the Visayas revolve. It is the most densely populated island in the Philippines and is second only to Luzon in its strategic and economic importance to the country. Cebu draws almost two million foreign travellers a year. The island's prime attractions are its white-sand beaches and spectacular diving, chiefly off the northern tip of Cebu at Malapascua and down on the southwest coast at Moalboal. And don't ignore much-maligned Cebu City, which has lively bars, emerging eateries and burgeoning retail appeal."
+
+    
+}
