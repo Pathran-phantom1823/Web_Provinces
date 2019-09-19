@@ -1,0 +1,24 @@
+{
+    "name": "Cebu",
+    "Population": "967,000",
+    "Images":["https://primer.com.ph/feature/wp-content/uploads/sites/15/2017/05/top-photo.jpg", 
+        "https://upload.wikimedia.org/wikipedia/commons/a/af/Cebu_montage.jpg"],
+
+    "Delicacies": [
+        {
+            "name": "Puto Cutchinta",
+            "link": "https://i.pinimg.com/originals/07/e7/f5/07e7f5a8e09537e8c7e4db23269500cd.jpg"
+        },
+        {
+            "name":"Chicharon",
+            "link":"https://mycebu.ph/wp-content/uploads/2014/07/carcar-chicharon-672x372.jpg"
+        },
+        {
+            "name": "Benignit",
+            "link":"https://www.cebutraveller.com/wp-content/uploads/2018/03/Binignit.jpg"
+        }
+
+    ]
+
+    
+}

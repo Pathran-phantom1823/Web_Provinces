@@ -1,0 +1,28 @@
+{
+    "group": "Luzon",
+    "name": "Bulacan",
+    "Population": "3,292,071",
+    "Image":[
+        {
+            "image1":"https://www.vigattintourism.com/assets/article_main_photos/optimize/1350548068WILE3mrS.jpg"
+        },
+        {
+            "image2":"https://net1.ph/sites/default/files/Bulacan.jpg"
+        }
+    ],
+    "Delicacies":[
+        {
+            "name":"Sapin-sapin",
+            "link":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzK7HUluJGkFUB6DXtYx0v9LZryqFomdHz8vAmPYq8tj2ZE5Kq"
+        },
+        {
+            "name":"Inipit",
+            "link":"https://i.pinimg.com/originals/92/53/26/925326506b40828b403734857acaeb1c.jpg"
+        },
+        {
+            "name":"Kakanin",
+            "link":"https://i.pinimg.com/originals/e1/4d/f8/e14df855826deb2dac6292645c298940.jpg"
+        }
+    ]
+    
+}
