@@ -5,7 +5,7 @@ var fs = require('fs')
 var port = process.env.PORT || 3000;
 const path = require('path');
 app.use(express.static(path.resolve('./public')));
-var request = require('./counter');
+counter = 0;
 
 
 // app.get('/', (req,res) =>{
@@ -15,23 +15,24 @@ var request = require('./counter');
 
 
 app.all('/Province/:name', function(req, res){
+    counter ++;
     var filename = req.params.name + ".json";
     fs.readFile('./provinces/' + filename, function(err, data){
         if(err) throw err;
         var provinceData = JSON.parse(data);
         res.render('index.pug', {provinceData:provinceData})
         console.log(provinceData);
+    })
 
+    fs.writeFile('new_File.txt', "Server Request: "+counter, (err)=>{
+        if (err) throw err;
+      console.log('File is created successfully.');
     })
 })
 
 
-var pingCount = 0;
-app.get('/',(req, res) => {
-  pingCount++;
-  res.send(`ping world for ${pingCount} times`);
-  request.append(res)
-});
+
+
 
 
 
