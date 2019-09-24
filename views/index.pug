@@ -5,19 +5,45 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Document
-    body
+        style
+            include style.css
+            include semantic.css
+    body(style = 'background: rgb(34,193,195);background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(48,45,253,1) 100%);')
                     center 
-                        h1= provinceData["name"]
+                        div(class="ui sizer vertical segment")
+                            div(class="ui huge header")=provinceData["name"]
+                            
                         
-                    img(src= provinceData["Images"][1] style='width:100%;height:auto;')  
-                    img(src= provinceData["Images"][0] style='width:50%;height:auto;') 
-                    img(src= provinceData["Images"][2] style='width:49%;height:auto;')
-                
-                    h1= provinceData["group"]
-                    
-                    strong
-                        label Delicacies:
-                    p= provinceData["Delicacies"][0]
-                    p= provinceData["Delicacies"][1] 
-                    p= provinceData["Delicacies"][2]
-                    p= provinceData["write_ups"]   
+                    img(src= provinceData["Images"][1] style='width:100%;height:auto;')
+                    img(src= provinceData["Images"][0] style='width:49.9%;height:auto;') 
+                    img(src= provinceData["Images"][2] style='width:50%;height:auto;')
+                    hr
+                    center
+                        h1= provinceData["group"]
+                    hr
+                    br
+                    center
+                        strong
+                            label Delicacies: 
+                        br
+                        p= provinceData["Delicacies"][0]
+                        p= provinceData["Delicacies"][1] 
+                        p= provinceData["Delicacies"][2]
+
+                    hr
+                    br
+                    div(class="ui equal width grid")
+                        center
+                            div(class = "ten wide column")
+                                p= provinceData["write_ups"]
+                    br
+                    hr
+                    center  
+                        h1 Rating:
+                        div(class="ui buttons")
+                            button(class = "ui red  button") one
+                            button(class = "ui blue button") two
+                            button(class = "ui green button") three
+                            button(class = "ui orange button") four
+                            button(class = "ui yellow button") five
+                            
