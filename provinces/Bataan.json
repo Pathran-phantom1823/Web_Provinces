@@ -5,7 +5,7 @@
     "Population": "760,650",
     "Images":["/images/Bataan1.jpg", 
         "/images/Bataan2.jpg", 
-        "/images/bataan3.jpg"],
+        "/images/bataan4.jpg"],
 
     "Delicacies": [
         "Motey's Buko Pie",
@@ -13,6 +13,6 @@
         "Dennis Ube de Leche Halaya"
 
     ],
-    "write_ups":"Bataan is a province in the Philippines situated in the Central Luzon region. Its capital is the City of Balanga. Occupying the entire Bataan Peninsula on Luzon, Bataan is bordered by the provinces of Zambales and Pampanga to the north. The peninsula faces the South China Sea to the west and Subic Bay to the north-west, and encloses Manila Bay to the east."
-    
+    "write_ups":"Bataan is a province in the Philippines situated in the Central Luzon region. Its capital is the City of Balanga. Occupying the entire Bataan Peninsula on Luzon, Bataan is bordered by the provinces of Zambales and Pampanga to the north. The peninsula faces the South China Sea to the west and Subic Bay to the north-west, and encloses Manila Bay to the east.",
+    "rating": "0"
 }

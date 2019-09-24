@@ -4,19 +4,21 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        title Document
+        title 
+        script(src="rating.js")
         style
             include style.css
             include semantic.css
-    body(style = 'background: rgb(34,193,195);background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(48,45,253,1) 100%);')
+    body(style = 'background-image: linear-gradient(to right top, #21f217, #00dba4, #00baff, #008eff, #0e48ed);')
                     center 
                         div(class="ui sizer vertical segment")
-                            div(class="ui huge header")=provinceData["name"]
+                            div(class="ui huge header" id='pname')=provinceData["name"]
                             
-                        
+
                     img(src= provinceData["Images"][1] style='width:100%;height:auto;')
-                    img(src= provinceData["Images"][0] style='width:49.9%;height:auto;') 
-                    img(src= provinceData["Images"][2] style='width:50%;height:auto;')
+                    center
+                        img(src= provinceData["Images"][0] style='width:50%;height:auto;') 
+                        img(src= provinceData["Images"][2] style='width:50%;height:auto;')
                     hr
                     center
                         h1= provinceData["group"]
@@ -25,6 +27,7 @@ html(lang="en")
                     center
                         strong
                             label Delicacies: 
+                        br
                         br
                         p= provinceData["Delicacies"][0]
                         p= provinceData["Delicacies"][1] 
@@ -40,10 +43,14 @@ html(lang="en")
                     hr
                     center  
                         h1 Rating:
+                        h2= provinceData["rating"] 
+                        br
+                        br
                         div(class="ui buttons")
-                            button(class = "ui red  button") one
-                            button(class = "ui blue button") two
-                            button(class = "ui green button") three
-                            button(class = "ui orange button") four
-                            button(class = "ui yellow button") five
-                            
+                            button(class = "ui red  button" value='1' id='btn1') one
+                            button(class = "ui blue button" value= '2' id='btn2') two
+                            button(class = "ui green button" value='3' id='btn3') three
+                            button(class = "ui orange button" value = '4' id='btn4') four
+                            button(class = "ui yellow button" value= '5' id='btn5') Five
+
+                      
