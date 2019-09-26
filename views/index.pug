@@ -5,7 +5,8 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title 
-        
+        script
+            include jQuery.js
         style
             include style.css
             include semantic.css
@@ -52,5 +53,6 @@ html(lang="en")
                             button(class = "ui green button" value='3' id='btn3') three
                             button(class = "ui orange button" value = '4' id='btn4') four
                             button(class = "ui yellow button" value= '5' id='btn5') Five
-    script(src="/rating.js")
+    script
+        include rating.js
                       
