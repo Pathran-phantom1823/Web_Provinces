@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $('button').on('click', function (e) {
+    $('#button1').on('click', function (e) {
         e.preventDefault();
         console.log('clcik')
         var prov = $("title").html().toLowerCase();

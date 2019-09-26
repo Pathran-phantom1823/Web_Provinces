@@ -28,10 +28,15 @@ app.all('/Province/:name', function(req, res){
     })
 })
 
-app.post('/rate', function (req, res) {
-    ratenow.addFile(req, res);
-})
 
+app.post('/rate', function(req, res) {
+    req.on('data', function(data){
+      var datum = JSON.parse(data)
+      fs.readFile(datum.prov, function(err, dats) {
+        console.log(JSON.parse(dats))
+      })      
+    })
+})
 
 
 
