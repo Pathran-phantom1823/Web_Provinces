@@ -4,9 +4,8 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        title 
-        script
-            include jQuery.js
+        title= provinceData["short_name"]
+        script(src = "/scripts/jQuery.js")
         style
             include style.css
             include semantic.css
@@ -22,37 +21,45 @@ html(lang="en")
                         img(src= provinceData["Images"][2] style='width:50%;height:auto;')
                     hr
                     center
-                        h1= provinceData["group"]
+                        h1(id="group")= provinceData["group"]
                     hr
                     br
-                    center
-                        strong
-                            label Delicacies: 
-                        br
-                        br
-                        p= provinceData["Delicacies"][0]
-                        p= provinceData["Delicacies"][1] 
-                        p= provinceData["Delicacies"][2]
-
+                    div(class = "ui grid")
+                        div(class = "eight wide column" id="column1")
+                            center
+                                strong
+                                    h1 Delicacies: 
+                                br
+                                br
+                                p= provinceData["Delicacies"][0]
+                                p= provinceData["Delicacies"][1] 
+                                p= provinceData["Delicacies"][2]
+                        div(class="eight wide column" id="column2")
+                            center
+                                h1 Population:
+                                h2= provinceData["Population"]
+                    br
                     hr
                     br
                     div(class="ui equal width grid")
                         center
                             div(class = "ten wide column")
+                                h1 About 
                                 p= provinceData["write_ups"]
                     br
                     hr
-                    center  
-                        h1 Rating:
-                        h2= provinceData["rating"] 
-                        br
-                        br
-                        div(class="ui buttons")
-                            button(class = "ui red  button" value='1' id='btn1') one
-                            button(class = "ui blue button" value= '2' id='btn2') two
-                            button(class = "ui green button" value='3' id='btn3') three
-                            button(class = "ui orange button" value = '4' id='btn4') four
-                            button(class = "ui yellow button" value= '5' id='btn5') Five
-    script
-        include rating.js
+                    center 
+                        div(id="raterow") 
+                            h1 Rating:
+                            h2(id="rate")= provinceData["rating"] 
+                            br
+                            br
+                            div(class="ui buttons")
+                                button(class = "ui red  button" value=1 id='btn1') one
+                                button(class = "ui blue button" value= 2 id='btn2') two
+                                button(class = "ui green button" value=3 id='btn3') three
+                                button(class = "ui orange button" value = 4 id='btn4') four
+                                button(class = "ui yellow button" value= 5 id='btn5') Five
+    script(src="/rating.js") 
+        
                       

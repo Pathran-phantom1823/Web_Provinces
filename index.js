@@ -4,8 +4,9 @@ var http = require('http').Server(app)
 var fs = require('fs')
 var port = process.env.PORT || 3000;
 const path = require('path');
-var ratenow = require('./rateprovince')
+// var ratenow = require('./rateprovince')
 var requests = require('./modules/fsreadfile')
+var jsoncondtion =require('./modules/conditionjson')
 
 
 
@@ -16,6 +17,8 @@ app.use(function(req, res, next){
 })
 
 app.use(express.static(path.resolve('./public')));
+
+app.use(express.static(path.resolve('./public/scripts')));
 
 app.all('/Province/:name', function(req, res){
     
@@ -29,13 +32,15 @@ app.all('/Province/:name', function(req, res){
 })
 
 
-app.post('/rate', function(req, res) {
-    req.on('data', function(data){
-      var datum = JSON.parse(data)
-      fs.readFile(datum.prov, function(err, dats) {
-        console.log(JSON.parse(dats))
-      })      
-    })
+app.get('/rate', function(req, res) {
+  var rate = req.query.rate;
+  var province = (req.query.province.toLowerCase())+".json";
+  var data = JSON.parse(jsoncondtion.read_JSON(province));
+  var average = Number(data.rating) + Number(rate)
+  data.rating = average;
+  data.rating = Number(data.rating / 2).toFixed(2)
+  jsoncondtion.update_JSON(province, data)
+  res.end("" + data.rating)
 })
 
 
